@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide de Imagens</title>
+    <style>
+        #slider {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /*tempo entre imagens*/
+        #slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<div id="slider">
+    <div id="slides">
+        <div class="slide"><img src=""><a href=""></a></div>
+        <div class="slide"><img src="" ><a href=""></a></div>
+        <div class="slide"><img src="" ><a href=""></a></div>
+        <!-- Adicione mais imagens conforme necessário -->
+    </div>
+</div>
+
+
+<script>
+    const slides = document.getElementById('slides');
+    let slideIndex = 0;
+
+    function showSlides() {
+        slideIndex++;
+        if (slideIndex >= slides.children.length) {
+            slideIndex = 0;
+        }
+
+        const translateValue = -slideIndex * 100;
+        slides.style.transform = `translateX(${translateValue}%)`;
+    }
+    setInterval(showSlides, 2000); // Altere o valor (em milissegundos) para ajustar a velocidade do slide
+</script>
+
+</body>
+</html>

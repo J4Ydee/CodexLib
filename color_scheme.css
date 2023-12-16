@@ -1,0 +1,113 @@
+/*ligação com o scirpt*/
+.modo-claro {
+  background-color: #fff;
+  color: black;
+   }
+
+.logo{
+    width: 250px;
+    height: 100px;
+}
+
+body{
+  background-color: #282828;
+  color: white;
+  } 
+img{
+    display: block;
+    border-radius: 4%;
+    width: 10%;
+    border-image: none;
+  }
+  /*Fonte Do Site*/
+  @font-face{
+    font-family: Coves;
+    src: url(Coves.otf);
+  }
+  @font-face{
+    font-family: CovesBold;
+    src: url(CovesBold.otf);
+  }
+  
+  /*Listas e menu*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: color #282828;
+  }
+  
+  li {
+    float: left;
+    border-right:none;
+    border-style:initial;
+    background-color: #240090;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }*
+  
+  li a {
+    display:block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    font-family:CovesBold;
+    font-weight: bold;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #190061;
+  }
+  
+  .active {
+    background-color: #3500d3;
+  }
+  label{
+    font-family: Coves;
+  }
+
+  /*testar*/
+  .container {
+    width: 50%
+  }
+  .d-flex{
+    display: flex;
+     width: 100%;
+  }
+  .d-flex-col{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .text-center {
+    text-align: center;
+}
+.TabButton {
+      width: 100%;
+    color: #5A5A61;
+    border: 0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #FFFFFF;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    padding: 16px;
+    cursor: pointer;
+}
+.TabButtonSelected {
+
+    color: #7A1315 !important;
+    border-bottom-color: #C94927 !important;
+    font-weight: 500;
+}
+.d-chart-n {
+  display: none;
+}
+
+.d-chart-show {
+  display: block;
+}
